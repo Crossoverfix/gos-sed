@@ -1,0 +1,31 @@
+.gs-widget-frame{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 24px 17px;
+  grid-auto-flow: row dense;
+}
+.test{
+  background-color: red;
+  order: 1;
+}
+.test1{
+  order: 2;
+  background-color: #5667c2;
+  width: 2fr;
+  height: 3fr;
+  //grid-area: 5 / 3 / 8 / 4;
+}
+.test2{
+  order: 5;
+  background-color: green;
+  grid-area: 2 / 1 / 6 / 4;
+}
+.test3{
+  order: 5;
+  background-color: #9b861a;
+  grid-column: span 2;
+  grid-row: span 4;
+}

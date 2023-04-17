@@ -1,0 +1,17 @@
+@import "assets/style/var";
+@import "assets/style/mixin";
+@import "assets/style/font";
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: "Golos text";
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+@import "assets/style/icon";
+@import "assets/style/option";
+@import "assets/style/media";
