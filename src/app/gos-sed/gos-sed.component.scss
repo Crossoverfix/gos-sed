@@ -540,6 +540,8 @@
         &.medium{
           .gs-frame__grid__widget__content__card{
             padding: 16px 24px;
+            box-shadow: none;
+            background-color: var(--widget-card-small-bg-color);
           }
           .gs-frame__grid__widget__content__card__counters{
             display: none;
@@ -565,6 +567,8 @@
             align-items: center;
             justify-content: space-between;
             flex-wrap: nowrap;
+            box-shadow: none;
+            background-color: var(--widget-card-small-bg-color);
           }
           .gs-frame__grid__widget__content__card__counters{
             display: none;
