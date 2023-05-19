@@ -10,7 +10,7 @@
     </div>
 </div>
 <div class="gs-frame">
-    <div class="gs-frame__side-bar">
+    <div class="gs-frame__side-bar" [ngClass]="{'hidden': !showSideBar}">
         <div class="gs-frame__side-bar__control">
             <button class="gs-frame__side-bar__control__toggle" [ngClass]="{'hidden': showSideBar}" (click)="toggleShowContent()"></button>
         </div>
@@ -37,11 +37,28 @@
             </div>
         </div>
         <div class="gs-frame__side-bar__footer">
-
+            <button class="gs-theme-switch" [ngClass]="{'switch': toggleDarkTheme}" (click)="toggleTheme()">
+                <div class="gs-theme-switch__icon"></div>
+            </button>
         </div>
     </div>
     <div class="gs-frame__content">
-
+        <div class="gs-frame__search">
+            <div class="gs-frame__search__input">
+                <input placeholder="Поиск документа" type="search" class="gs-frame__search__input__string">
+                <input type="submit" value="Найти" class="gs-frame__search__input__submit">
+            </div>
+            <div class="gs-frame__search__btn-group">
+                <button class="gs-frame__search__btn-group__btn">
+                    <div class="gs-frame__search__btn-group__btn__icon icon__search-add"></div>
+                    <span class="gs-frame__search__btn-group__btn__text">Создать поручение</span>
+                </button>
+                <button class="gs-frame__search__btn-group__btn">
+                    <div class="gs-frame__search__btn-group__btn__icon icon__search-gog"></div>
+                    <span class="gs-frame__search__btn-group__btn__text">Настройки</span>
+                </button>
+            </div>
+        </div>
+        <div class="gs-frame__grid"></div>
     </div>
 </div>
-<div class="gs-footer"></div>

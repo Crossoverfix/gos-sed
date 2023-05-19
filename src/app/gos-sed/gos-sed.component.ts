@@ -18,4 +18,12 @@ export class GosSedComponent {
     }
     // list.querySelectorAll('[data-toggle-index="'+index+'"]' )[0].classList.toggle("hidde");
   }
+  toggleTheme(){
+    if (this.toggleDarkTheme){
+      this.toggleDarkTheme = false;
+    } else {
+      this.toggleDarkTheme = true;
+    }
+    // list.querySelectorAll('[data-toggle-index="'+index+'"]' )[0].classList.toggle("hidde");
+  }
 }
