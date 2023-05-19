@@ -458,7 +458,7 @@
               font-weight: 600;
               font-size: 30px;
               line-height: 38px;
-              white-space: nowrap;
+              //white-space: nowrap;
               color: var(--widget-title-color);
             }
             &__info{
@@ -602,6 +602,9 @@
           }
           .gs-frame__grid__widget__content__card__info__other{
             display: none;
+          }
+          .gs-frame__grid__widget__content__card__info{
+            width: auto;
           }
         }
       }
