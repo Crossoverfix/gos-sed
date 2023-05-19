@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class GosSedComponent {
 
+  public showSideBar: boolean = true;
+  public toggleDarkTheme: boolean = false;
+
+  toggleShowContent(){
+    if (this.showSideBar){
+     this.showSideBar = false;
+    } else {
+      this.showSideBar = true;
+    }
+    // list.querySelectorAll('[data-toggle-index="'+index+'"]' )[0].classList.toggle("hidde");
+  }
 }
