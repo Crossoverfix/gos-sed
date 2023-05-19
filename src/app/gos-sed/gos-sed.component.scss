@@ -555,6 +555,9 @@
             font-size: 28px;
             line-height: 36px;
           }
+          .gs-frame__grid__widget__content__card__info__other__counter{
+            background-color: var(--widget-card-other-counter-small-color);
+          }
           .gs-frame__grid__widget__content__card__info__other__counter.disable{
             display: none;
           }
